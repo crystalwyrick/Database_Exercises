@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>colorIndex</key>
+			<integer>3</integer>
+			<key>database</key>
+			<string>join_test_db</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>kcid</key>
+			<string>-5380322569684177775</string>
+			<key>name</key>
+			<string>codeup</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>ssh_host</key>
+			<string>192.168.77.77</string>
+			<key>ssh_keyLocation</key>
+			<string></string>
+			<key>ssh_keyLocationEnabled</key>
+			<integer>0</integer>
+			<key>ssh_user</key>
+			<string>vagrant</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSSHTunnelConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>codeup</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClJpZNIeHy0uXxAPTlNN
+			dXRhYmxlU3RyaW5noy0vI1hOU1N0cmluZ9IeHzEyXk5TTXV0YWJs
+			ZUFycmF5ozEzI1dOU0FycmF50h4fIjWiIiNfEA9OU0tleWVkQXJj
+			aGl2ZXLRODlUZGF0YYABAAgAEQAaACMALQAyADcARQBLAFIAWgBl
+			AGwAcAByAHQAdgB6AHwAfgCAAIIAhwCMAJEAugDBAMIAwwDFAMoA
+			1QDeAPQA+AEFAQ4BEwEVARcBGQEeASgBKgEtATIBRAFIAVEBVgFl
+			AWkBcQF2AXkBiwGOAZMAAAAAAAACAQAAAAAAAAA6AAAAAAAAAAAA
+			AAAAAAABlQ==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {1078, 609}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>INSERT INTO roles (name) VALUES ('admin');
+INSERT INTO roles (name) VALUES ('author');
+INSERT INTO roles (name) VALUES ('reviewer');
+INSERT INTO roles (name) VALUES ('commenter');
+
+INSERT INTO users (name, email, role_id) VALUES
+('bob', 'bob@example.com', 1),
+('joe', 'joe@example.com', 2),
+('sally', 'sally@example.com', 3),
+('adam', 'adam@example.com', 3),
+('jane', 'jane@example.com', null),
+('mike', 'mike@example.com', null);
+
+INSERT INTO users (name, email, role_id) VALUES
+('rhonda', 'rhonda@example.com', 2),
+('jessica', 'jessica@example.com', 3),
+('robert', 'robert@example.com', 2),
+('olivia', 'olivia@example.com', 1);
+
+SELECT u.name AS user_name, r.name AS role 
+FROM users AS u
+LEFT JOIN roles AS r ON u.role_id = r.id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+			<key>table</key>
+			<string>roles</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>202</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>SELECT u.name AS user_name, r.name AS role 
+FROM users AS u
+LEFT JOIN roles AS r ON u.role_id = r.id</string>
+		<string>SELECT u.name AS user_name, r.name AS role 
+FROM users AS u
+JOIN roles AS r ON u.role_id = r.id</string>
+		<string>LEFT</string>
+		<string>SELECT u.name AS user_name, r.name AS role 
+FROM users AS u
+RIGHT JOIN roles AS r ON u.role_id = r.id</string>
+		<string>SELECT u.name, r.name 
+FROM users AS u
+JOIN roles AS r ON u.role_id = r.id</string>
+		<string>SELECT u.id, r.id, u.name, r.name 
+FROM users AS u
+JOIN roles AS r ON u.name = r.name</string>
+		<string>SELECT id, u.name, r.name 
+FROM users AS u
+JOIN roles AS r ON u.name = r.name</string>
+		<string>SELECT u.name, r.name 
+FROM users AS u
+JOIN roles AS r ON u.name = r.name</string>
+		<string>SELECT * FROM users AS u
+RIGHT JOIN roles AS r ON u.name = r.name</string>
+		<string>SELECT * FROM users AS u
+RIGHT JOIN roles AS r ON u.name - r.name</string>
+		<string>SELECT * FROM roles</string>
+		<string>SELECT * FROM users</string>
+		<string>SELECT u.name, r.name 
+FROM users AS u 
+/* JOIN roles AS r ON r.name = u.name */</string>
+		<string>SELECT u.name, r.name 
+FROM users AS u 
+JOIN roles AS r ON r.name = u.name</string>
+		<string>INSERT INTO users (name, email, role_id) VALUES
+('rhonda', 'rhonda@example.com', 2),
+('jessica', 'jessica@example.com', 3),
+('robert', 'robert@example.com', 2),
+('olivia', 'olivia@example.com', 1)</string>
+		<string>INSERT INTO users (name, email, role_id) VALUES
+('bob', 'bob@example.com', 1),
+('joe', 'joe@example.com', 2),
+('sally', 'sally@example.com', 3),
+('adam', 'adam@example.com', 3),
+('jane', 'jane@example.com', null),
+('mike', 'mike@example.com', null)</string>
+		<string>INSERT INTO roles (name) VALUES ('admin');
+INSERT INTO roles (name) VALUES ('author');
+INSERT INTO roles (name) VALUES ('reviewer');
+INSERT INTO roles (name) VALUES ('commenter')</string>
+		<string>INSERT INTO roles (name) VALUES ('commenter')</string>
+		<string>CREATE TABLE users (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  role_id INT UNSIGNED DEFAULT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (role_id) REFERENCES roles (id)
+)</string>
+		<string>CREATE TABLE roles (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  PRIMARY KEY (id)
+)</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.44-0ubuntu0.14.04.1-log</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
